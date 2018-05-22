@@ -1,35 +1,149 @@
-<!-- component template -->
-<script type="text/x-template" id="grid-template">
-  <table>
-    <thead>
-    <tr>
-      <th v-for="key in columns"
-          @click="sortBy(key)"
-          :class="{ active: sortKey == key }">
-        {{ key | capitalize }}
-        <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
-          </span>
-      </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr v-for="entry in filteredData">
-      <td v-for="key in columns">
-        {{entry[key]}}
-      </td>
-    </tr>
-    </tbody>
-  </table>
-</script>
+<nav class="nav-extended">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">OneScene</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="sass.html">マイページ</a></li>
+      <li><a href="badges.html">環境設定</a></li>
+    </ul>
+  </div>
+  <div class="nav-content">
+    <ul class="tabs">
+      <li class="tab"><a class="active" href="#test1">2018年</a></li>
+      <li class="tab"><a href="#test1">2017年</a></li>
+      <li class="tab"><a href="#test1">2016年</a></li>
+      <li class="tab"><a href="#test1">2015年</a></li>
+    </ul>
+  </div>
+</nav>
 
-<!-- demo root element -->
-<div id="demo">
-  <form id="search">
-    Search <input name="query" v-model="searchQuery">
-  </form>
-  <demo-grid
-  :data="gridData"
-  :columns="gridColumns"
-  :filter-key="searchQuery">
-  </demo-grid>
-</div>
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="sass.html">マイページ</a></li>
+  <li><a href="badges.html">環境設定</a></li>
+</ul>
+
+<main>
+  <div class="container">
+  <!-- Page Content goes here -->
+    <h1>2018年</h1>
+    <h2>1月</h2>
+    <div class="row">
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+      <div class="col s6 m3 l2">
+        1
+      </div>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      </ul>
+    </div>
+
+
+
+    <div id='hello'>
+      {{message}}
+      <app></app>
+    </div>
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="row">
+    <div class="col l6 s12">
+      <h5 class="white-text">Footer Content</h5>
+      <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+    </div>
+    <div class="col l4 offset-l2 s12">
+      <h5 class="white-text">Links</h5>
+      <ul>
+        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
+

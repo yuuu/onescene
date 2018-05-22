@@ -1,0 +1,84 @@
+@import "materialize/components/color-variables";
+$primary-color: #2ab7ca;
+$secondary-color: #fed766;
+$accent-color: #fe4a49;
+$base-color: #e6e6ea;
+@import 'materialize';
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+nav {
+  .nav-wrapper {
+    padding: 0 24px;
+  }
+  .tabs {
+    background-color: darken($primary-color, 10);
+
+    .tab {
+      a {
+        color: $base-color;
+        &.active, &:hover, &:visited {
+          color: $base-color;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 0 24px;
+    margin: 0;
+
+    .btn-floating {
+      font-size: 2em;
+      margin-top: 24px;
+      background-color: $secondary-color;
+    }
+
+    h1 {
+      font-size: 2em;
+      border-bottom: solid 1px $base-color;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      border-bottom: solid 1px $base-color;
+    }
+  }
+}
+
+.row {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  .col {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.page-footer {
+  .footer-copyright {
+    text-align: left;
+    background-color: transparent;
+  }
+  .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+  padding: 0 24px;
+}
+

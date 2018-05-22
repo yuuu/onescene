@@ -13,4 +13,14 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require materialize
+//= require materialize-sprockets
 //= require_tree .
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+        direction: 'top'
+    });
+});
