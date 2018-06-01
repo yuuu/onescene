@@ -4,7 +4,6 @@
 //= require action_cable
 //= require_self
 //= require_tree ./channels
-//= require materialize
 
 (function() {
   this.App || (this.App = {});

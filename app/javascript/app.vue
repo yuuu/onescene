@@ -1,18 +1,14 @@
 <template>
-    <div id="app">
-    </div>
+  <div id="app">
+    <p>{{ message }}</p>
+  </div>
 </template>
 
 <script>
 export default {
   data: function () {
     return {
-      message: 'Hello Vue!'
-    }
-  },
-  methods: {
-    greet: function () {
-      this.seen = !this.seen
+      message: "Hello Vue!"
     }
   }
 }
